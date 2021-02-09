@@ -2,7 +2,7 @@
   <div :class="$style.wrapper">
     <nuxt-link :to="`/product/${product.pSlug}`">
       <p>{{ product.pName }}</p>
-      <img v-lazy="product.image" :class="$style.image" />
+      <img v-lazy="product.image.imgXL" :class="$style.image" />
     </nuxt-link>
   </div>
 </template>
@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss" module>
 .wrapper {
+  @include globalWrapper;
   display: flex;
   flex-direction: column;
 }

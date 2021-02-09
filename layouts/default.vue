@@ -1,11 +1,17 @@
 <template>
   <div>
+    <Header />
+    <Breadcrumbs />
     <Nuxt />
   </div>
 </template>
 
 <script>
+import Breadcrumbs from '@/components/Breadcrumbs';
+import Header from '../components/Header';
+
 export default {
+  components: { Header, Breadcrumbs },
   computed: {
     meta() {
       return [
@@ -21,7 +27,7 @@ export default {
     head() {
       const canonical = `https://mysite.com${this.$route.path
         .toLowerCase()
-        .replace(/\/$/, '')}`
+        .replace(/\/$/, '')}`;
       return {
         meta: [...this.meta],
         script: [
@@ -34,5 +40,5 @@ export default {
       };
     },
   },
-}
+};
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="$style.wrapper">
     <h1>Интернет-магазин "Хвостики"</h1>
     <CategoriesList :categories="categories" />
   </div>
@@ -28,3 +28,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" module>
+.wrapper {
+  @include globalWrapper;
+}
+</style>

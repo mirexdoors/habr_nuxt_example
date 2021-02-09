@@ -21,6 +21,7 @@ module.exports = {
   rootDir: __dirname,
   serverMiddleware: [],
   router: {
+    middleware: ['resetBreadcrumbs'],
     prefetchLinks: false,
   },
   loading: { color: '#ddd' },

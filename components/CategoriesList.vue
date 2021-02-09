@@ -30,6 +30,7 @@ export default {
 
 <style lang="scss" module>
 .wrapper {
+  @include globalWrapper;
   display: flex;
 }
 
