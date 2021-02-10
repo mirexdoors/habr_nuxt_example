@@ -12,7 +12,7 @@
 
 <script>
 import { mapState } from 'vuex';
-import ProductBrief from '~/components/ProductBrief';
+import ProductBrief from '@/components/category/ProductBrief';
 
 export default {
   components: { ProductBrief },

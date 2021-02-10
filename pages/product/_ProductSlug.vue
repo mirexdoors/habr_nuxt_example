@@ -9,6 +9,7 @@
       <div :class="$style.topRightBlock">
         <h1>{{ product.pName }}</h1>
         <p>Цена: {{ product.pPrice }}</p>
+        <BuyButton :product="product" />
       </div>
     </div>
     <h2>Описание</h2>
@@ -18,9 +19,11 @@
 
 <script>
 import { mapState } from 'vuex';
+import BuyButton from '@/components/common/BuyButton';
 
 export default {
   name: '_ProductSlug',
+  components: { BuyButton },
   async asyncData({ app, params, route, error }) {
     try {
       await app.store.dispatch('getCurrentProduct', { route });

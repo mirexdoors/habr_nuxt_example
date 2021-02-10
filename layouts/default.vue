@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Breadcrumbs from '@/components/Breadcrumbs';
-import Header from '../components/Header';
+import Breadcrumbs from '@/components/common/Breadcrumbs';
+import Header from '../components/common/Header';
 
 export default {
   components: { Header, Breadcrumbs },

@@ -34,6 +34,15 @@ module.exports = {
     'nuxt-webfontloader',
     'cookie-universal-nuxt',
     '@nuxtjs/style-resources',
+    [
+      'nuxt-vuex-localstorage',
+      {
+        ...(isDev && {
+          mode: 'debug',
+        }),
+        localStorage: ['cart'],
+      },
+    ],
   ],
   webfontloader: {
     events: false,

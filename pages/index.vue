@@ -7,7 +7,7 @@
 
 <script>
 import { mapState } from 'vuex';
-import CategoriesList from '~/components/CategoriesList';
+import CategoriesList from '@/components/common/CategoriesList';
 
 export default {
   components: { CategoriesList },
