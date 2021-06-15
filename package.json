@@ -13,7 +13,7 @@
     "intersection-observer": "^0.7.0",
     "node-sass": "^4.13.1",
     "normalize.css": "8.0.1",
-    "nuxt": "^2.15.3",
+    "nuxt": "^2.15.7",
     "nuxt-trailingslash-module": "1.1.0",
     "nuxt-vuex-localstorage": "^1.2.7",
     "nuxt-webfontloader": "^1.1.0",
